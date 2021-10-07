@@ -5,7 +5,7 @@ import {Field} from "../../service/fields/field.interface";
 @Component({
   selector: 'app-field-item',
   templateUrl: './field-item.component.html',
-  styleUrls: ['./field-item.component.css']
+  styleUrls: ['./field-item.component.scss']
 })
 export class FieldItemComponent implements OnInit {
   @Input() field!: Field

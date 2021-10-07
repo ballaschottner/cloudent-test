@@ -1,11 +1,12 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
-import {FieldsService} from "../../../service/fields/fields.service";
-import {Field} from "../../../service/fields/field.interface";
+import { Component, OnInit} from '@angular/core';
+import {Field} from "../../service/fields/field.interface";
+import {FieldsService} from "../../service/fields/fields.service";
+
 
 @Component({
   selector: 'app-field-list',
   templateUrl: './field-list.component.html',
-  styleUrls: ['./field-list.component.css']
+  styleUrls: ['./field-list.component.scss']
 })
 export class FieldListComponent implements OnInit {
   fields!: Field[];
@@ -15,7 +16,7 @@ export class FieldListComponent implements OnInit {
 
   ngOnInit(): void {
     this.fieldsService.getFields()
-      .subscribe(fields => {
+      .subscribe((fields) => {
         this.fields = fields;
         console.log('fields', fields)
       })

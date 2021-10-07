@@ -1,0 +1,40 @@
+@import "src/styles";
+
+.settings-container {
+  background-color: white;
+  width: 833px;
+  border-radius: 5px;
+  border: 1px solid #D7D9DC;
+  box-shadow: 0 1px 5px 1px #D7D9DC;
+  padding-bottom: 2px;
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+
+    .form-container-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .button-yes {
+        background-color: white;
+        padding: 5px 30px;
+        border: 1px solid #D7D9DC;
+        border-radius: 2px;
+        font-size: 14px;
+      }
+      .button-no {
+        background-color: $text-secondary-color;
+        padding: 5px 30px;
+        border: 1px solid #D7D9DC;
+        border-radius: 2px;
+        color: white;
+        margin-left: -2px;
+        font-size: 14px;
+      }
+    }
+  }
+}
