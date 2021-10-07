@@ -41,7 +41,7 @@
         display:flex;
         align-items: center;
         height: 82px;
-        
+
         .circle {
             height: 24px;
             width: 24px;
@@ -97,25 +97,3 @@
     }
 }
 
-.add-new-container {
-    background-color: white;
-    height: 100px;
-    width: 833px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .add-new-button{
-        background-color: #F7F9FB;
-        border: 1px dashed #D7D9DC;
-        border-radius: 5px;
-        height: 62px;
-        width: 717px;
-        font-size: 16px;
-        color: $text-secondary-color;
-    }
-
-    .add-new-button:hover {
-        background-color: #f2f6f8;
-    }
-}
