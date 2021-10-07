@@ -1,0 +1,121 @@
+@import "../../styles.scss";
+
+.header-line {
+    background-color: #32475c;
+    height: 30px;
+    width: 100%;
+  }
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 833px;
+
+    .formtitle {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 15px 2px 15px 2px;
+    }
+
+    .title {
+        font-size: 25px;
+        padding: 30px 2px 15px 2px;
+    }
+
+    .description {
+        font-size: 14px;
+        padding: 0 2px 20px 2px;
+        line-height: 20px;
+    }
+
+    .hint {
+        background-color: #cbd0f0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 15px;
+        display:flex;
+        align-items: center;
+        height: 82px;
+        
+        .circle {
+            height: 24px;
+            width: 24px;
+            background-color: #606FC7;
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.settings-container {
+    background-color: white;
+    width: 833px;
+    border-radius: 5px;
+    border: 1px solid #D7D9DC;
+    box-shadow: 0 1px 5px 1px #D7D9DC;
+    padding-bottom: 2px;
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+
+        .form-container-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .button-yes {
+                background-color: white;
+                padding: 5px 30px;
+                border: 1px solid #D7D9DC;
+                border-radius: 2px;
+                font-size: 14px;
+            }
+            .button-no {
+                background-color: $text-secondary-color;
+                padding: 5px 30px;
+                border: 1px solid #D7D9DC;
+                border-radius: 2px;
+                color: white;
+                margin-left: -2px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.add-new-container {
+    background-color: white;
+    height: 100px;
+    width: 833px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add-new-button{
+        background-color: #F7F9FB;
+        border: 1px dashed #D7D9DC;
+        border-radius: 5px;
+        height: 62px;
+        width: 717px;
+        font-size: 16px;
+        color: $text-secondary-color;
+    }
+
+    .add-new-button:hover {
+        background-color: #f2f6f8;
+    }
+}
