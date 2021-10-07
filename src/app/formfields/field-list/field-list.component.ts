@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Field} from "../../service/fields/field.interface";
 import {FieldsService} from "../../service/fields/fields.service";
 
@@ -18,7 +18,6 @@ export class FieldListComponent implements OnInit {
     this.fieldsService.getFields()
       .subscribe((fields) => {
         this.fields = fields;
-        console.log('fields', fields)
       })
   }
 
