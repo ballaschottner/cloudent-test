@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormfieldsComponent } from './formfields/formfields.component';
 import {FormfieldsModule} from "./formfields/formfields.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {FormfieldsModule} from "./formfields/formfields.module";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormfieldsModule
+        FormfieldsModule,
+        BrowserAnimationsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
