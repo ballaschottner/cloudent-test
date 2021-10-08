@@ -7,6 +7,7 @@ import {FieldItemComponent} from "./field-item/field-item.component";
 import {MatDialogModule} from "@angular/material/dialog";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ModalComponent} from "./modal/modal.component";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -31,7 +32,8 @@ import {ModalComponent} from "./modal/modal.component";
     CommonModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
   ]
 })
 export class FormfieldsModule { }
